@@ -9,6 +9,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    overflow: hidden;
   }
   h1 {
     font-size: 80px;
