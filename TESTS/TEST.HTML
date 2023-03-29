@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="TEST.CSS">
+  <!-- <link rel="stylesheet" href="style_1200px.css">
+  <link rel="stylesheet" href="style_800px.css">
+  <link rel="stylesheet" href="style_600px.css"> -->
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="choose-block">
+    <div>
+      <button id="buttonFor1player">1 PLAYER</button>
+    </div>
+    <div>
+      <button id="buttonFor2players" style="--c: #e95a49">2 PLAYERS</button>
+    </div>
+  </div>
+
+  <div id="main-block-for1Player">
+    <div id="rulesFor1Player">
+      <h1>Number guessing game</h1>
+      <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
+    </div>
+    <div style="display:flex; flex-direction: column; gap: 10px;">
+      <div><span>Enter a guess:</span><input type="tel" id="inp"></div>
+      <div><div id="buttons"><button id="push">push</button><button id="restart" style="--c:#E95A49">restart</button><button id="backToMenuFrom1Player" style="--c:#8674A5">1P/2P</button></div></div>
+    </div>
+    <div id="arr">. . .</div>
+    <div id="result">. . .</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div id="main-block-for2Players">
+    <div>
+      <h1>Number guessing game</h1>
+      <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
+    </div>
+    <div id="page">
+      <h1>1 PLAYER</h1>
+      <button id="backToMenuFrom2Player">1P/2P</button>
+      <h1>2 PLAYER</h1>
+    </div>
+    <div id="block-input">
+      <div>Enter a guess:<input type="tel" id="inpFor1Player"><button id="pushFor1Player">push</button><button id="restartFor1Player" style="--c:#E95A49">restart</button></div>
+      <div>Enter a guess:<input type="tel" id="inpFor2Player"><button id="pushFor2Player">push</button><button id="restartFor2Player" style="--c:#E95A49">restart</button></div>
+    </div>
+    <div id="resultsForPlayers">
+      <div id="result1p">
+        <div id="arrFor1Player"></div>
+        <div id="resultFor1Player"></div></div>
+      <div id="result2p">
+        <div id="arrFor2Player"></div>
+        <div id="resultFor2Player"></div></div>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+<script src="TEST.JS"></script>
+<!-- <script src="two.js"></script> -->
+</body>
+</html>
