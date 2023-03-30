@@ -122,8 +122,10 @@ let restartFor1Player = function () {
   valueRFor1Player = Math.floor(Math.random() * 99 + 1);
   console.log("randomFor1Player = " + valueRFor1Player);
   arrFor1Player = [];
-  document.getElementById("arrFor1Player").innerHTML = arrFor1Player;
-  document.getElementById("resultFor1Player").innerHTML = "";
+  document.getElementById("arrFor1Player").innerHTML = ". . .";
+  document.getElementById("resultFor1Player").innerHTML = ". . .";
+  document.getElementById("resultFor1Player").style.backgroundColor = "#f2dca2";
+  document.getElementById("resultFor1Player").style.color = "black";
   document.getElementById("pushFor1Player").disabled = false;
   document.getElementById("inpFor1Player").value = "";
 };
@@ -133,8 +135,10 @@ let restartFor2Player = function () {
   valueRFor2Player = Math.floor(Math.random() * 99 + 1);
   console.log("randomFor2Player = " + valueRFor2Player);
   arrFor2Player = [];
-  document.getElementById("arrFor2Player").innerHTML = arrFor2Player;
-  document.getElementById("resultFor2Player").innerHTML = "";
+  document.getElementById("arrFor2Player").innerHTML = ". . .";
+  document.getElementById("resultFor2Player").innerHTML = ". . .";
+  document.getElementById("resultFor2Player").style.backgroundColor = "#f2dca2";
+  document.getElementById("resultFor2Player").style.color = "black";
   document.getElementById("pushFor2Player").disabled = false;
   document.getElementById("inpFor2Player").value = "";
 };
@@ -163,9 +167,17 @@ let valueRFor1Player = Math.floor(Math.random() * 100);
 let valueRFor2Player = Math.floor(Math.random() * 100);
 let countFor1Player = 0;
 let countFor2Player = 0;
+const screenWidth = window.screen.width;
+const screenHeight = window.screen.height;
 
 console.log("randomFor1Player = " + valueRFor1Player);
 console.log("randomFor2Player = " + valueRFor2Player);
+console.log("screenWidth= " + screenWidth);
+console.log("screenHeight = " + screenHeight);
+
+if (screenWidth < 1200) {
+  document.getElementById("buttonFor2players").disabled = "true";
+}
 
 document
   .getElementById("buttonFor2players")

@@ -85,4 +85,11 @@
     background-color: var(--c);
     color: #fff;
   }
+  #main-block-for2Players {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    /* margin: auto; */
+  }
 }
