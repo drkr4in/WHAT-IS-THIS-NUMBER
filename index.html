@@ -11,54 +11,68 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="choose-block">
-    <div>
-      <button id="buttonFor1player">1 PLAYER</button>
-    </div>
-    <div>
-        <button id="buttonFor2players" style="--c: #e95a49">2 PLAYERS</button>
-    </div>
+
+  <div class="main-menu">
+    <button class="button main-menu__buttonOne main-menu__buttonOne_font-size">1 PLAYER</button>
+    <button class="button main-menu__buttonTwo main-menu__buttonTwo_font-size main-menu__buttonTwo_color">2 PLAYERS</button>
   </div>
-  <div id="main-block-for1Player">
-    <div id="rulesFor1Player">
-      <h1>Number guessing game</h1>
-      <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
+  <div class="solo-game">
+    <div class="rules rules_gap">
+      <h1 class="rules__h1 rules__h1_font-size">Number guessing game</h1>
+      <p class="rules__text rules__text_font-size">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
     </div>
-    <div style="display:flex; flex-direction: column; gap: 10px;">
-      <div><span>Enter a guess:</span><input type="tel" id="inp"></div>
-      <div><div id="buttons"><button id="push">push</button><button id="restart" style="--c:#E95A49">restart</button><button id="backToMenuFrom1Player" style="--c:#8674A5">1P/2P</button></div></div>
-    </div>
-    <div id="arr">. . .</div>
-    <div id="result">. . .</div>
-  </div>
-  <div id="main-block-for2Players">
-    <div>
-      <h1>Number guessing game</h1>
-      <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
-    </div>
-    <div id="page">
-      <h1>1 PLAYER</h1>
-      <h1>2 PLAYER</h1>
-    </div>
-    <div id="block-input">
-      <div><span>Enter a guess:</span><input type="tel" id="inpFor1Player">
-        <div><button id="pushFor1Player">push</button><button id="restartFor1Player" style="--c:#E95A49">restart</button></div>
-        <div id="result1p">
-          <div id="arrFor1Player">. . .</div>
-          <div id="resultFor1Player">. . .</div>
-        </div>
+    <div class="input-block input-block_font-size input-block_gap">
+      <div>
+          <span class="input-block__span input-block__span_font-size">Enter a guess:</span>
+          <input class="input-block__input input-block__input_font-size input-block__input_wh" type="tel" >
       </div>
-      <div><button id="backToMenuFrom2Player" style="--c:#8674A5">1P/2P</button></div>
-      <div><span>Enter a guess:</span><input type="tel" id="inpFor2Player">
-        <div><button id="pushFor2Player">push</button><button id="restartFor2Player" style="--c:#E95A49">restart</button></div>
-        <div id="result2p">
-          <div id="arrFor2Player">. . .</div>
-          <div id="resultFor2Player">. . .</div></div>
-        </div>
+      <div class="input-block__buttons input-block__buttons_gap">
+        <button class="button button_font-size input-block__push ">push</button>
+        <button class="button button_font-size input-block__restart " style="--c:#E95A49">restart</button>
+        <button class="button button_font-size input-block__back-to-menu input-block__back-to-menu_color">1P/2P</button>
       </div>
     </div>
+    <div class="solo-game__array solo-game__array_font-size">. . .</div>
+    <div class="solo-game__result solo-game__result_font-size">. . .</div>
+  </div>
+  <div class="multi-game">
+    <div class="rules">
+      <h1 class="rules__h1 rules__h1_font-size">Number guessing game</h1>
+      <p class="rules__text rules__text_font-size">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
+    </div>
+    <div class="multi-game__inputs">
+      <div class="input-block input-block_font-size">
+        <h1 class="input-block__h1 input-block__h1_font-size">1 PLAYER</h1>
+        <div><span class="span">Enter a guess:</span>
+          <input class="input-block__input-for-one-player input-block__input input-block__input_font-size input-block__input_wh" type="tel" >
+        </div>
+        <div class="input-block__buttons">
+          <button class="button button_font-size input-block__push-for-one-player">push</button>
+          <button class="button button_font-size input-block__restart-for-one-player" style="--c:#E95A49">restart</button>
+        </div>
+        <div class="multi-game__array-for-one-player multi-game__array-for-one-player_font-size">. . .</div>
+        <div class="multi-game__result-for-one-player multi-game__result-for-one-player_font-size">. . .</div>
+      </div>
+      <div>
+        <button class="button button_font-size multi-game__back-to-menu input-block__back-to-menu_color">1P/2P</button>
+      </div>
+      <div class="input-block input-block_font-size">
+        <div>
+          <h1 class="input-block__h1 input-block__h1_font-size">2 PLAYER</h1>
+          <span class="span">Enter a guess:</span>
+          <input class="input-block__input-for-two-player input-block__input input-block__input_font-size input-block__input_wh" type="tel" >
+        </div>
+        <div class="input-block__buttons">
+          <button class="button button_font-size input-block__push-for-two-player">push</button>
+          <button class="button button_font-size input-block__restart-for-two-player" style="--c:#E95A49">restart</button>
+        </div>
+        <div class="multi-game__array-for-two-player multi-game__array-for-two-player_font-size">. . .</div>
+        <div class="multi-game__result-for-two-player multi-game__result-for-two-player_font-size">. . .</div>
+      </div>
+    </div>
+  </div>
 </body>
-<script src="one.js"></script>
-<script src="two.js"></script>
+<script src="solo-game.js"></script>
+<script src="multi-game.js"></script>
 </body>
 </html>

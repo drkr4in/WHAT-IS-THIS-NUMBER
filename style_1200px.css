@@ -4,63 +4,26 @@
     padding: 0;
   }
   body {
-    margin: 0;
     background: #f2dca2;
     height: 100vh;
     display: flex;
     justify-content: center;
     overflow: hidden;
   }
-  h1 {
-    font-size: 80px;
-  }
-  p,
-  span,
-  #arr {
-    font-size: 50px;
-  }
-  #choose-block {
+  .main-menu {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  #buttonFor1player,
-  #buttonFor2players {
-    font-size: 120px;
-  }
-  #main-block-for1Player {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: center;
-  }
-  #inp {
-    font-size: 50px;
-    width: 100px;
-    height: 50px;
-    background: #f2dca2;
-    border-radius: 10px;
-    text-align: center;
-  }
-  #buttons {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-  }
-  #result {
-    text-align: center;
-    font-size: 50px;
-  }
-  button {
-    font-size: 50px;
+  .button {
     font-family: system-ui, sans-serif;
     cursor: pointer;
     padding: 0.1em 0.6em;
     font-weight: bold;
     border: none;
   }
-  button {
+  .button {
     border-radius: 10px;
     --c: #229091;
 
@@ -74,13 +37,106 @@
     outline-offset: 0.1em;
     transition: background-size 0.4s, background-position 0s 0.4s;
   }
-  button:hover {
+  .button:hover {
     --_p: 100%;
     transition: background-position 0.4s, background-size 0s;
   }
-  button:active {
+  .button:active {
     box-shadow: 0 0 9e9Q inset #0009;
     background-color: var(--c);
     color: #fff;
+  }
+  .button_font-size {
+    font-size: 50px;
+  }
+  .main-menu__buttonOne {
+    display: block;
+  }
+  .main-menu__buttonOne_font-size,
+  .main-menu__buttonTwo_font-size {
+    font-size: 120px;
+  }
+  .main-menu__buttonTwo_color {
+    --c: #e95a49;
+  }
+  .solo-game {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+  }
+  .rules {
+    display: flex;
+    flex-direction: column;
+  }
+  .rules__h1_font-size {
+    font-size: 80px;
+  }
+  .rules__text_font-size {
+    font-size: 50px;
+  }
+  .input-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .input-block_font-size {
+    font-size: 50px;
+  }
+  .input-block__input {
+    background: #f2dca2;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .input-block__input_font-size {
+    font-size: 50px;
+  }
+  .input-block__input_wh {
+    width: 100px;
+    height: 50px;
+  }
+  .solo-game__array_font-size {
+    font-size: 50px;
+  }
+  .input-block__buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .input-block__buttons_gap {
+    gap: 5px;
+  }
+  .input-block__push_font-size,
+  .input-block__restart_font-size,
+  .input-block__back-to-menu_font-size {
+    font-size: 50px;
+  }
+  .input-block__back-to-menu_color {
+    --c: #8674a5;
+  }
+  .solo-game__result {
+    text-align: center;
+  }
+  .solo-game__result_font-size {
+    font-size: 50px;
+  }
+
+  .multi-game {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+  }
+  .multi-game__page {
+    display: flex;
+    justify-content: space-around;
+  }
+  .multi-game__h1_font-size {
+    font-size: 50px;
+  }
+  .multi-game__inputs {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
   }
 }
