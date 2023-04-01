@@ -30,7 +30,7 @@ let getNumberFor2Player = function () {
 let resultFor1Player = function () {
   let NumberInFor1Player = getNumberFor1Player();
   if (!NumberInFor1Player) {
-    restart();
+    restartFor1Player();
     document.querySelector(".multi-game__result-for-one-player").innerHTML =
       "You should write number in range 1 to 100";
     return;
@@ -44,8 +44,8 @@ let resultFor1Player = function () {
     document.querySelector(".multi-game__result-for-one-player").style.color =
       "white";
     console.log("You win");
-    document.querySelector("input-block__push-for-one-player").disabled = true;
-    document.querySelector("input-block__input-for-one-player").value = "";
+    document.querySelector(".input-block__push-for-one-player").disabled = true;
+    document.querySelector(".input-block__input-for-one-player").value = "";
     return false;
   } else if (countFor1Player < 10 && NumberInFor1Player != valueRFor1Player) {
     if (NumberInFor1Player > valueRFor1Player) {
@@ -88,7 +88,7 @@ let resultFor1Player = function () {
 let resultFor2Player = function () {
   let NumberInFor2Player = getNumberFor2Player();
   if (!NumberInFor2Player) {
-    restart();
+    restartFor2Player();
     document.querySelector(".multi-game__result-for-two-player").innerHTML =
       "You should write number in range 1 to 100";
     return;

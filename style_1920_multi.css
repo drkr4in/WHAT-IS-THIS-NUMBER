@@ -1,0 +1,71 @@
+.multi-game {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 40px;
+}
+.multi-game__page {
+  display: flex;
+  justify-content: space-around;
+}
+.multi-game__inputs {
+  display: grid;
+  grid-template-areas:
+    "input-block__h1-one-player multi-game__back input-block__h1-two-player"
+    "multi-game_input-one-player multi-game__back multi-game_input-two-player"
+    "input-block__buttons_grid1 multi-game__back input-block__buttons_grid2"
+    "multi-game__array-for-one-player multi-game__back multi-game__array-for-two-player"
+    "multi-game__result-for-one-player multi-game__back multi-game__result-for-two-player";
+  gap: 5px;
+  grid-template-columns: 40% 20% 40%;
+  /* grid-template-rows: 10% 20% 20% 20% 20%; */
+}
+.input-block__h1-one-player {
+  grid-area: input-block__h1-one-player;
+}
+.multi-game__back {
+  grid-area: multi-game__back;
+}
+.input-block__h1-two-player {
+  grid-area: input-block__h1-two-player;
+}
+.multi-game_input-one-player {
+  grid-area: multi-game_input-one-player;
+}
+.multi-game_input-two-player {
+  grid-area: multi-game_input-two-player;
+}
+.input-block__buttons_grid1 {
+  grid-area: input-block__buttons_grid1;
+}
+.input-block__buttons_grid2 {
+  grid-area: input-block__buttons_grid2;
+}
+.multi-game__array-for-one-player {
+  grid-area: multi-game__array-for-one-player;
+}
+.multi-game__array-for-two-player {
+  grid-area: multi-game__array-for-two-player;
+}
+.multi-game__result-for-one-player {
+  grid-area: multi-game__result-for-one-player;
+}
+.multi-game__result-for-two-player {
+  grid-area: multi-game__result-for-two-player;
+}
+.input-block__restart_color {
+  --c: #e95a49;
+}
+.input-block__h1_font-size {
+  font-size: 40px;
+}
+.multi-game__back {
+  grid-row-start: span 5;
+}
+.multi-game__inputs_font-size {
+  font-size: 40px;
+}
+.multi-game__result-for-one-player {
+  max-width: 100%;
+}

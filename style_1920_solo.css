@@ -80,6 +80,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    max-width: 100%;
   }
   .input-block_font-size {
     font-size: 50px;
@@ -109,7 +110,7 @@
   .input-block__push_font-size,
   .input-block__restart_font-size,
   .input-block__back-to-menu_font-size {
-    font-size: 50px;
+    font-size: 40px;
   }
   .input-block__back-to-menu_color {
     --c: #8674a5;
@@ -118,25 +119,8 @@
     text-align: center;
   }
   .solo-game__result_font-size {
-    font-size: 50px;
+    font-size: 40px;
   }
 
-  .multi-game {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: center;
-  }
-  .multi-game__page {
-    display: flex;
-    justify-content: space-around;
-  }
-  .multi-game__h1_font-size {
-    font-size: 50px;
-  }
-  .multi-game__inputs {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-  }
+  
 }

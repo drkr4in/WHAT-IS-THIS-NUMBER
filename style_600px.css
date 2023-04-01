@@ -140,4 +140,7 @@
     justify-content: space-around;
     flex-direction: row;
   }
+  .input-block__restart_color {
+    --c: #e95a49;
+  }
 }
